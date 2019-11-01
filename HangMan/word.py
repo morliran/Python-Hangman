@@ -3,11 +3,11 @@ from level import Level
 
 
 class Word:
-    def __init__(self, word, level):
+    def __init__(self, word, the_level: Level):
         self.__hint = ''
         self.__enable = True
         self.__word = word
-        self.__level = Level(level.get_value())
+        self.__the_level = Level(the_level.get_value())
 
     def get_word(self):
         return self.__word
@@ -23,10 +23,10 @@ class Word:
         self.__hint = self.get_word()[index]
 
     def get_level(self):
-        return self.__level
+        return self.__the_level
 
     def set_level(self, value):
-        self.__level = value
+        self.__the_level = value
 
     def get_enable(self):
         return self.__enable

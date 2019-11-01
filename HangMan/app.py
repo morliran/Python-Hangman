@@ -5,7 +5,6 @@ from game import Game
 
 j, difficulty = 1, 0
 p = Player("abc", "123")
-print(p.get_coins())
 while j > 0:
     while True:
         print("Choice level")
@@ -30,4 +29,5 @@ while j > 0:
         else:
             g.make_guess(ch[0])
     j = 0
+
 
